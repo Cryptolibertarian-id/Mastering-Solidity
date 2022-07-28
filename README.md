@@ -17,6 +17,38 @@ Author : Gun Gun Febrianza
 
 
 
+----
+
+
+
+# Header
+
+Last touched on 28 July 2022
+
+| Parameter | Value | Note |
+| --------- | ----- | ---- |
+|           |       |      |
+|           |       |      |
+|           |       |      |
+
+
+
+---
+
+
+
+## Resources 
+
+- Ebooks
+  - [Go Ethereum Book](https://goethereumbook.org/en/) By Miguel Mota 
+- Repositories
+  - [Ethereum Development Tools](https://github.com/miguelmota/ethereum-devtools) By Miguel Mota ([Typescript](https://lab.miguelmota.com/ethereum-devtools/))
+  - [Ethereum HD Wallet](https://github.com/miguelmota/ethereum-hdwallet) By Miguel Mota 
+
+
+
+---
+
 
 
 # Solidity
