@@ -105,3 +105,38 @@ if (window.ethereum) {
 
 
 
+If we want to initiate request to metamask use this scripts :
+
+```javascript
+window.ethereum.request({
+    method: "eth_requestAccounts",
+});
+```
+
+
+
+Here is the example to send native token using metamask :
+
+```javascript
+const send = async function send(amount) {
+  const accounts = await window.ethereum.request({
+    method: "eth_requestAccounts",
+  });
+
+  const wei = web3.utils.toWei(amount, "ether");
+
+  if (accounts.length > 0) {
+    window.ethereum.request({
+      method: "eth_sendTransaction",
+      params: [
+        {
+          from: accounts[0],
+          to: "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619",
+          value: web3.utils.toHex(wei),
+        },
+      ],
+    });
+  }
+};
+```
+
